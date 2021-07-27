@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MyProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whiteTextColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/blackTextColor"
+            android:padding="4dp"
+            android:layout_margin="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male"
+            android:importantForAutofill="auto"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/whiteTextColor"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headerText"
+                android:layout_marginBottom="6dp"
+                android:text="Account Info"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_name" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/profilename"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="developer" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_mobile" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:text="Mobile" />
+
+                <TextView
+                    android:id="@+id/profilenumber"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:text="+91-8129999999" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/profileemail"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="developer@appsnipp.com" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_address" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/profileaddress"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="abc city def street" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/profilebutton"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/blackTextColor"
+            android:text="Update"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</ScrollView>

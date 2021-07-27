@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".UploadResult">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        app:cardCornerRadius="13dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/addPdf">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|center_horizontal"
+            android:src="@drawable/result"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pdfTextView"
+            android:text="pdf name"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/syllabusTitle"
+        android:layout_marginTop="60dp"
+        android:textSize="22sp"
+        android:hint="Enter title"/>
+
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:gravity="center"
+        android:id="@+id/addPdfCategory"
+        android:layout_marginTop="60dp"
+        android:layout_marginVertical="16dp"/>
+
+
+    <Button
+        android:id="@+id/uploadPdfButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:paddingTop="10dp"
+        android:text="Upload"
+        android:textSize="18sp"  />
+
+</LinearLayout>

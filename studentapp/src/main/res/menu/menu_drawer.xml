@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/aboutApp"
+            android:icon="@drawable/ic_aboutapp"
+            android:title="About" />
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/ic_person"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/developedBy"
+            android:icon="@drawable/ic_developedby"
+            android:title="Developed By" />
+    </group>
+    <item android:title="Communicate">
+     <menu>
+         <item android:id="@+id/share"
+             android:icon="@drawable/ic_sahre"
+             android:title="Share"
+             />
+         <item
+             android:id="@+id/logout"
+             android:icon="@drawable/ic_logout"
+             android:title="Log out" />
+
+     </menu>
+ </item>
+</menu>

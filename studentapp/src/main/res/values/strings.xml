@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Student Portal</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="about">This application is an online student portal that helps to easily provide all the exclusive information for students like attendance, syllabus which can be downloaded and accessible online and offline mode and moreover timetable, reference books as per subjects revision or you can see all subjects of previous year question papers of Computer Science, as well as Electronics &amp; Communication, respectively. The students need to get registered with the valid credentials to have an access to the services provided by this application. This application is build to help students to fulfil their needs at one place.
+</string>
+</resources>
